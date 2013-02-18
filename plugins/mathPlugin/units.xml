@@ -1,0 +1,152 @@
+<?xml version='1.0' ?>
+	
+<unitDefinition>
+	<prefixes>	
+		<prefix id='n' html='n'>1E-9</prefix>
+		<prefix id='mu' html='&amp;micro;'>1E-6</prefix>
+		<prefix id='m' html='m'>1E-3</prefix>
+		<prefix id='c' html='c'>1E-2</prefix>
+		<prefix id='k' html='k'>1E03</prefix>
+		<prefix id='M' html='M'>1E06</prefix>
+		<prefix id='G' html='G'>1E09</prefix>
+		<prefix id='T' html='T'>1E12</prefix>
+	</prefixes>
+	
+	<units>
+		<!-- Grundeinheiten -->
+		<unit>
+			<id>s</id>	
+			<exponents>1,0,0,0,0,0,0</exponents> <!-- LISTE: s, m, kg, A, K, mol, cd -->
+			<type>time</type>
+			<isSi>true</isSi>
+		</unit>
+		<unit>
+			<id>m</id>
+			<exponents>0,1,0,0,0,0,0</exponents> <!-- LISTE: s, m, kg, A, K, mol, cd -->
+			<type>length</type>
+			<isSi>true</isSi>
+		</unit>
+		<unit>
+			<id>kg</id>
+			<exponents>0,0,1,0,0,0,0</exponents> <!-- LISTE: s, m, kg, A, K, mol, cd -->
+			<type>weight</type>
+			<isSi>true</isSi>
+		</unit>		
+		<unit>
+			<id>A</id>
+			<exponents>0,0,0,1,0,0,0</exponents> <!-- LISTE: s, m, kg, A, K, mol, cd -->
+			<type>current</type>
+			<isSi>true</isSi>
+		</unit>	
+		<unit>
+			<id>K</id>
+			<exponents>0,0,0,0,1,0,0</exponents> <!-- LISTE: s, m, kg, A, K, mol, cd -->			
+			<type>temperature</type>
+			<isSi>true</isSi>
+		</unit>		
+		<unit>
+			<id>mol</id>
+			<type>amount</type>
+			<exponents>0,0,0,0,0,1,0</exponents> <!-- LISTE: s, m, kg, A, K, mol, cd -->			
+			<isSi>true</isSi>
+		</unit>		
+		<unit>
+			<id>cd</id>
+			<type>luminous intensity</type>
+			<exponents>0,0,0,0,0,0,1</exponents> <!-- LISTE: s, m, kg, A, K, mol, cd -->			
+			<isSi>true</isSi>
+		</unit>		
+		
+		<!-- zusammengesetzte Einheiten -->		
+		<!-- VOLTAGE -->	
+		<unit>
+			<id>V</id>
+			<type>voltage</type>
+			<exponents>-3,2,1,-1,0,0,0</exponents> <!-- LISTE: s, m, kg, A, K, mol, cd -->			
+			<isSi>true</isSi>
+		</unit>
+		
+		<!-- CHARGE -->
+		<unit>
+			<id>C</id>
+			<type>charge</type>
+			<exponents>1,0,0,1,0,0,0</exponents> <!-- LISTE: s, m, kg, A, K, mol, cd -->			
+			<isSi>true</isSi>
+		</unit>	
+		<unit>
+			<id>eV</id>
+			<type>charge</type>
+			<exponents>-2,2,1,0,0,0,0</exponents> <!-- LISTE: s, m, kg, A, K, mol, cd -->			
+			<isSi>true</isSi>
+		</unit>		
+		
+		<!-- CAPACITY -->
+		<unit>
+			<id>F</id>
+			<type>capacity</type>
+			<exponents>4,-2,-1,2,0,0,0</exponents> <!-- LISTE: s, m, kg, A, K, mol, cd -->			
+			<isSi>true</isSi>
+		</unit>	
+		
+		<!-- ENERGY -->
+		<unit>
+			<id>J</id>
+			<type>energy</type>
+			<exponents>-2,2,1,0,0,0,0</exponents> <!-- LISTE: s, m, kg, A, K, mol, cd -->			
+			<isSi>true</isSi>
+		</unit>		
+		
+		<!-- PRESSURE -->
+		<unit>
+			<id>Pa</id>
+			<type>pressure</type>
+			<exponents>-2,-1,1,0,0,0,0</exponents> <!-- LISTE: s, m, kg, A, K, mol, cd -->			
+			<isSi>true</isSi>
+		</unit>		
+		<unit>
+			<id>bar</id>
+			<type>pressure</type>
+			<exponents>-2,-1,1,0,0,0,0</exponents> <!-- LISTE: s, m, kg, A, K, mol, cd -->			
+			<isSi>false</isSi>
+			<convertToSi>x*1E5</convertToSi> <!-- This function is used to convert from bar to Pascal. x represents the value --> 
+			<convertFromSi>x/1E5</convertFromSi> <!-- This function is used to convert from Pascal to bar. x represents the value -->
+			<SI>Pa</SI>
+		</unit>	
+		<unit>
+			<id>torr</id>
+			<type>pressure</type>
+			<exponents>-2,-1,1,0,0,0,0</exponents> <!-- LISTE: s, m, kg, A, K, mol, cd -->			
+			<isSi>false</isSi>
+			<convertToSi>x*(101325/760)</convertToSi>
+			<convertFromSi>x/(101325/760)</convertFromSi>
+			<SI>Pa</SI>
+		</unit>														
+	
+		<!-- MASS -->
+		<unit>
+			<id>amu</id>
+			<type>mass</type>
+			<exponents>0,0,1,0,0,0,0</exponents> <!-- LISTE: s, m, kg, A, K, mol, cd -->			
+			<isSi>false</isSi>
+			<convertToSi>x*1.660538921E-27</convertToSi>
+			<convertFromSi>x/1.660538921E-27</convertFromSi>
+			<SI>kg</SI>
+		</unit>		
+		
+		<!-- AREA -->
+		<unit>
+			<id>m2</id>
+			<type>area</type>
+			<exponents>0,2,0,0,0,0,0</exponents> <!-- LISTE: s, m, kg, A, K, mol, cd -->			
+			<isSi>true</isSi>
+		</unit>		
+		
+		<!-- VOLUMEN -->
+		<unit>
+			<id>m3</id>
+			<type>volumen</type>
+			<exponents>0,3,0,0,0,0,0</exponents> <!-- LISTE: s, m, kg, A, K, mol, cd -->			
+			<isSi>true</isSi>
+		</unit>				
+	</units>		
+</unitDefinition>

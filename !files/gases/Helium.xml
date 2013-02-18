@@ -1,0 +1,15 @@
+<?xml version='1.0' ?>
+<Gas>
+	<GasName>Helium</GasName>
+	<GasDescription>Beschreibende Beschreibung...</GasDescription>
+	<m_i>4</m_i>
+	<m_gas>4</m_gas>
+	<v_sound>981</v_sound>
+	<sigma_ce>1E-19</sigma_ce>
+	<sigma_ci>1,5E-19</sigma_ci>
+	<A_townsend>3</A_townsend>
+	<B_townsend>34</B_townsend>
+	<C_townsend>4.4</C_townsend>
+	<D_townsend>14</D_townsend>
+	<EoverP>13</EoverP>
+</Gas>

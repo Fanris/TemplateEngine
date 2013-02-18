@@ -1,0 +1,111 @@
+<?xml version='1.0' ?>
+<!DOCTYPE name SYSTEM "config_layout.dtd">
+
+<Layout title='Orders of Magnitude'>
+	<Panel displayName='Plasma Parameter' canClose='false'>
+		<Field id='ne' displayName='n&lt;sub&gt;e&lt;/sub&gt;' canEdit='true'>
+			<FieldType type='numericTextbox'/>
+			<Value>1E14</Value>
+			<UnitCol preUnitText='' postUnitText=''>
+				<Unit id='m^-3' html='m&lt;sup&gt;-3&lt;/sup&gt;' default='true'>
+				 	<availablePrefixes>mu,m,c</availablePrefixes>
+				 	<defaultPrefix>c</defaultPrefix>
+				 </Unit>
+			</UnitCol>
+		</Field>	
+		<Field id='ni' displayName='n&lt;sub&gt;i&lt;/sub&gt;' canEdit='true' >
+			<FieldType type='numericTextbox'/>
+			<Value>1E14</Value>
+			<UnitCol preUnitText='' postUnitText=''>
+				<Unit id='m^-3' html='m&lt;sup&gt;-3&lt;/sup&gt;' default='true'>
+				 	<availablePrefixes>mu,m,c</availablePrefixes>
+				 	<defaultPrefix>c</defaultPrefix>
+				 </Unit>
+			</UnitCol>
+		</Field>	
+		<Field id='te' displayName='T&lt;sub&gt;e&lt;/sub&gt;' canEdit='true' >
+			<FieldType type='numericTextbox'/>
+			<Value>3.0</Value>
+			<UnitCol preUnitText='* qe * ' postUnitText=''>
+				<Unit id='V' html='V' default='true'>
+				 </Unit>
+			</UnitCol>
+		</Field>	
+		<Field id='pgas' displayName='P&lt;sub&gt;gas&lt;/sub&gt;' canEdit='true' >
+			<FieldType type='numericTextbox'/>
+			<Value>101325</Value>
+			<UnitCol preUnitText='' postUnitText=''>
+				<Unit id='Pa' html='Pa' default='true'>
+				 </Unit>
+ 				<Unit id='bar' html='bar' default='false'>
+				 </Unit>
+				<Unit id='torr' html='torr' default='false'>
+				 </Unit>				 
+			</UnitCol>
+		</Field>	
+		<Field id='tgas' displayName='T&lt;sub&gt;gas&lt;/sub&gt;' canEdit='true' >
+			<FieldType type='numericTextbox'/>
+			<Value>300</Value>
+			<UnitCol preUnitText='' postUnitText=''>
+				<Unit id='K' html='K' default='true'>
+				 </Unit>
+			</UnitCol>
+		</Field>		
+		<Field id='wlf' displayName='&amp;omega;&lt;sub&gt;LF&lt;/sub&gt;' canEdit='true' >
+			<FieldType type='numericTextbox'/>
+			<Value>13.56</Value>
+			<UnitCol preUnitText='* 10&lt;sup&gt;6&lt;/sup&gt; * 2 * &amp;pi; ' postUnitText=''>
+				<Unit id='s^-1' html='/ s' default='true'>
+				 </Unit>
+			</UnitCol>
+		</Field>	
+		<Field id='whf' displayName='&amp;omega;&lt;sub&gt;HF&lt;/sub&gt;' canEdit='true' >
+			<FieldType type='numericTextbox'/>
+			<Value>67.8</Value>
+			<UnitCol preUnitText='2 * &amp;pi; ' postUnitText=''>
+				<Unit id='s^-1' html='/ s' default='true'>
+				 </Unit>
+			</UnitCol>
+		</Field>	
+		<Field id='s' displayName='s' canEdit='true' >
+			<FieldType type='numericTextbox'/>
+			<Value>0.04</Value>
+			<UnitCol preUnitText='' postUnitText=''>
+				<Unit id='m' html='m' default='true'>
+				 	<availablePrefixes>mu,m,c</availablePrefixes>
+				 	<defaultPrefix>m</defaultPrefix>
+				 </Unit>
+			</UnitCol>
+		</Field>		
+		<Field id='l' displayName='L' canEdit='true' >
+			<FieldType type='numericTextbox'/>
+			<Value>0.001</Value>
+			<UnitCol preUnitText='' postUnitText=''>
+				<Unit id='m' html='m' default='true'>
+				 	<availablePrefixes>mu,m,c</availablePrefixes>
+				 </Unit>
+			</UnitCol>
+		</Field>		
+		<Field id='eAppl' displayName='E&lt;sub&gt;Appl&lt;/sub&gt;' canEdit='true' >
+			<FieldType type='numericTextbox'/>
+			<Value>8333333.3</Value>
+			<UnitCol preUnitText='' postUnitText=''>
+				<Unit id='V m^-1' html='V / m' default='true'>
+				 </Unit>
+			</UnitCol>
+		</Field>
+
+		<Field id='eTownsend' displayName='E&lt;sub&gt;Townsend&lt;/sub&gt;' canEdit='true' >
+			<FieldType type='numericTextbox'/>
+			<Value>666666.67</Value>
+			<UnitCol preUnitText='' postUnitText=''>
+				<Unit id='V m^-1' html='V / m' default='true'>
+				 </Unit>
+			</UnitCol>
+		</Field>
+		
+		<Field id='gasListBox' displayName='Gas' canEdit='true'>
+			<FieldType type='selectGasField'/>
+		</Field>				
+	</Panel>
+</Layout>

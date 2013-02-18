@@ -1,0 +1,15 @@
+<?xml version='1.0' ?>
+<Gas>
+	<GasName>Neon</GasName>
+	<GasDescription>Beschreibende Beschreibung...</GasDescription>
+	<m_i>20</m_i>
+	<m_gas>20</m_gas>
+	<v_sound>936</v_sound>
+	<sigma_ce>1E-19</sigma_ce>
+	<sigma_ci>2,4E-19</sigma_ci>
+	<A_townsend>4</A_townsend>
+	<B_townsend>100</B_townsend>
+	<C_townsend>8.2</C_townsend>
+	<D_townsend>17</D_townsend>
+	<EoverP>1.9</EoverP>
+</Gas>

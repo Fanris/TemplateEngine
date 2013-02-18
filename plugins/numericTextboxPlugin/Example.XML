@@ -1,0 +1,32 @@
+<Field ...>
+	<Constraint by='fieldId'>LOWER_THAN</Constraint> 
+	<!-- Constraint kann beliebig oft vorkommen -->
+	<!-- "by" gibt die FieldId des Elements an, mit dessen Wert verglichen wird -->
+	<!-- Mögliche vergleiche: LOWER_THAN, HIGHER_THAN, EQUAL, LOWER_THAN_IGNORE_UNIT, HIGHER_THAN_IGNORE_UNIT, EQUAL_IGNORE_UNIT -->
+	
+	<UnitCol preUnitText='' postUnitText=''>
+	<!-- "preUnitText" gibt einen Text an, welcher vor der Einheit erscheinen soll -->
+	<!-- "postUnitText" gibt einen Text an, welcher nach der Einheit erscheinen soll -->
+	
+		<Unit id='amu' html='amu' default='true'>
+		<!-- Unit Elemente dürfen beliebig oft vorkommen. Jedes steht dabei für eine eigene Einheit -->
+		<!-- "id" gibt die Einheit an. Stimmt mit der id in Units.xml überein -->
+		<!-- "html" gibt den angezeigten Namen der Einheit an. Kann HTML-Tags beinhalten, diese müssen aber XML-Konform maskiert sein-->
+		<!-- "default" gibt an, ob diese Einheit standardmässig (Wenn mehrere zur Auswahl stehen) ausgewählt ist. Kann true oeder false sein. -->
+		
+			<min></min>
+			<!-- Legt einen Minimalwert für diese Einheit fest. Kann leer gelassen werden, wenn diese Einheit nicht nach unten beschränkt sein soll. -->
+			
+			<max></max>
+			<!-- Legt einen Maximalwert für diese Einheit fest. Kann leer gelassen werden, wenn diese Einheit nicht nach oben beschränkt sein soll. -->
+			
+			<!-- Unabhängig von der Werten von Min und Max angegebene Constraints geptrüft. -->
+			
+			<availablePrefixes>m, c, k</availablePrefixes>
+			<!-- Gibt eine Kommagetrennte Liste mit möglichen Einheiten-Prefixen (s. Units.xml) -->
+			
+			<defaultPrefix></defaultPrefix>
+			<!-- Gibt das Standardmässig ausgewählte Prefix an. Kann leer sein, wenn kein Prefix gewählt werden soll. -->
+		</Unit>
+	</UnitCol>
+</Field

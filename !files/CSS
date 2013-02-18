@@ -1,0 +1,289 @@
+/** Add css rules here for your application. */
+/** Global */
+.global-Sheathmodel {
+	height: 590px;
+}
+
+.global-Title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #003560;
+  margin: 20px 0px 20px;
+  text-align: center;
+}
+
+.global-closeButton {
+  margin: 15px 6px 6px;
+  text-align: center;
+  margin-top: 8px;
+  margin-right: auto;
+  mmargin-left: auto;
+}
+
+.global-LabelBold {
+	margin: 4px;
+	font-weight: bold;	
+}
+
+.global-Label {
+	margin: 4px;	
+}
+
+.global-VersionLabel {
+	font-size: 0.75em;
+	color: #777777;
+	text-align: right;
+	margin: 4px;
+}
+
+.global-Author {
+	font-size: 0.75em;
+	color: #777777;
+	text-align: left;
+	margin: 4px;
+}
+
+.global-ButtonLeft {
+	float: left;
+	margin: 4px !important;
+	width: 75px;
+	height: 24px;
+}
+
+.global-ButtonRight {
+	float: right;
+	margin: 4px !important;
+	width: 75px;
+	height: 24px;
+}
+
+.global-ButtonCenter {
+	margin: 2px auto !important;
+	width: 75px;
+	height: 24px;
+}
+/** --- ^Global^ --- */
+
+/** Edit Panels Page */
+.editPanel-MainPanel {
+	width: 100%;
+}
+
+.editPanel-DisclosurePanel {
+	margin: 8px;
+	width: 98%;
+	background-color: #DDDDDD;	
+}
+
+.editPanel-Panel {
+	border: 1px solid;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	background-color: #DDDDDD;
+}
+
+.editPanel-Image {
+	width: 300px;
+}
+
+.editPanel-InnerPanel {
+	border-bottom: 1px solid;	
+	width: 100%;
+}
+
+.editPanel-Title {
+	margin: 4px;
+	width: 424px;
+}
+
+.editPanel-TitleLabel {
+	font-size: 1.5em;
+	text-align: left;
+	vertical-align: center;
+}
+
+.editPanel-EditButton {
+	width: 75px;
+	float: right;
+	display: block;
+  	font-size: 1em;
+  	margin-top: 4px !important;
+  	margin-bottom: 4px !important;
+}
+
+.editPanel-Flextable {
+	margin-top: 16px;	
+	font-weight: normal;
+}
+
+.editPanel-FlexTableLabel {
+	text-align: left;
+	width: 40%;
+}
+
+.editPanel-FlexTableValue {
+	text-align: right;
+	width: 40%
+}
+
+.editPanel-FlexTableInput {
+	text-align: right;
+}
+
+.editPanel-FlexTableUnit {
+	width: 20%;
+}
+
+.editPanel-ModelDescription {
+	resize: none;
+	width: 100%;
+	height: 64px;
+}
+
+.editPanel-SubmitJobBtn {
+	width: 200px;
+	font-size: 1.25em;
+	font-weight: bold;
+	margin: 8px;	
+	float: left;
+}
+
+.editPanel-ButtonLeft {	
+	width: 200px;
+	font-size: 1.25em;
+	font-weight: bold;
+	margin: 8px;	
+	float: left;
+}
+
+.editPanel-ButtonRight {
+	width: 200px;
+	font-size: 1.25em;
+	font-weight: bold;
+	margin: 8px;	
+	float: right;
+}
+
+.editPanel-ButtonPanel {
+	width: 100%;
+}
+
+.editPanel-filenameTextBox {
+	float: right;	
+}
+
+.editPanel-HasChanged {
+	border: 3px solid #EEEE44;	
+}
+
+.editPanel-Invalid {
+	border: 3px solid #FF0000 !important;
+}
+/** --- Edit Panel Page -- */
+
+/** ResultsPage */
+.ResultsPage-GraphPanel {
+	z-index: 800001;
+}
+
+.ResultsPage-PlotPanel {
+	margin: 4px;
+}
+
+.ResultsPage-Component {
+	margin: 4px;
+}
+
+.ResultsPage-Inputfile {
+	margin: 4px;
+}
+
+.ResultsPage-Title {
+	font-size: 2em;
+}
+
+.ResultsPage-Subtitle {
+	font-size: 1.5em;
+}
+
+.ResultsPage-Subsubtitle {
+	font-size: 1.2em;
+}
+
+.ResultsPage-Label {
+	margin-top: 4px;
+	margin-left: 4px;
+}
+
+.ResultsPage-Clickable {
+  color: blue;
+  font-size:11px;
+  font-family:Arial, Helvetica, sans-serif;
+  text-decoration:underline;
+  cursor: pointer;
+  font-style: italic;
+}
+/** --- ResultsPage --- */
+
+/** Job Control */
+.jobControl-TabPanel {
+	width: 1000px;
+	height: 550px;	
+	margin: 4px;
+	margin-top: 16px;
+}
+
+.jobControl-CellTable {
+	width: 978px;
+	margin: 4px;
+}
+
+/** Image Dialog */
+.imageDialog-CheckBox {
+	margin: 4px;
+}
+
+/** --- Image Dialog --- */
+
+
+/** Notifications */
+.notification-DialogLabel {
+	text-align: center;
+	text-weight: bold;	
+}
+
+.notification-DialogBox {
+	font-size: 1.2em;
+	font-weight: bold;	
+	z-index: 800001;
+}
+
+.notification-Label {
+	margin: 8px;
+	font-align: center;
+}
+/** --- Notifications --- */ 
+
+/** GWT overrides */
+.gwt-DisclosurePanel .header td {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.gasSelectDialog-Main {
+	margin: 4px;
+	background-color: #DDDDDD;
+	border: 1px solid;
+}
+
+.gasSelectDialog-ButtonPanel {
+	margin: 4px;
+	background-color: #DDDDDD;
+	border: 1px solid;
+}
+
+.gasSelectDialog-ListBox {
+	margin: 4px;
+}

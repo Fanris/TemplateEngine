@@ -1,0 +1,28 @@
+<!ELEMENT	Layout		(Panel*) >
+<!ELEMENT	Panel		(Field*) >
+<!ELEMENT	Field		(FieldType, Value*, UnitCol*) >
+<!ELEMENT	FieldType 	EMPTY >
+<!ELEMENT	UnitsCol	(Unit+) >
+<!ELEMENT	Unit		(min*, max*, availablePrefixes*, defaultPrefix*)>
+<!ELEMENT	min			(#PCDATA) >
+<!ELEMENT	max			(#PCDATA) >
+<!ELEMENT	availablePrefixes	(#PCDATA) >
+<!ELEMENT	defaultPrefix		(#PCDATA) >
+
+<!ATTLIST	Layout		title		CDATA				#REQUIRED>
+
+<!ATTLIST	Panel		displayName	CDATA				#REQUIRED>
+<!ATTLIST	Panel		image		CDATA				''>
+<!ATTLIST	Panel		canClose	(true | false)		'true'>
+
+<!ATTLIST	Field		id			ID					#REQUIRED>
+<!ATTLIST	Field		displayName	CDATA				#REQUIRED>
+<!ATTLIST	Field		canEdit		(true | false)		'true'>
+<!ATTLIST	Field		image		CDATA				''>
+
+<!ATTLIST	FieldType	type		CDATA				#REQUIRED>
+
+<!ATTLIST	Unit		id			CDATA				''>
+<!ATTLIST	Unit		html		CDATA				''>
+<!ATTLIST	Unit		default		(true | false)		'false'>
+	

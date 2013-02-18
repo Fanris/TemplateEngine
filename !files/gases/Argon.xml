@@ -1,0 +1,15 @@
+<?xml version='1.0' ?>
+<Gas>
+	<GasName>Argon</GasName>
+	<GasDescription>Argon</GasDescription>
+	<m_i>40</m_i>
+	<m_gas>40</m_gas>
+	<v_sound>319</v_sound>
+	<sigma_ce>1E-19</sigma_ce>
+	<sigma_ci>5E-19</sigma_ci>
+	<A_townsend>12</A_townsend>
+	<B_townsend>180</B_townsend>
+	<C_townsend>29.2</C_townsend>
+	<D_townsend>26.6</D_townsend>
+	<EoverP>3.6</EoverP>
+</Gas>
